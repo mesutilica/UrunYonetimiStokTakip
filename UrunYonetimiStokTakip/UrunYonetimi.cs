@@ -16,6 +16,7 @@ namespace UrunYonetimiStokTakip
         MarkaManager markaManager = new MarkaManager();
         void Yukle()
         {
+            dgvUrunler.AutoGenerateColumns = false;
             dgvUrunler.DataSource = manager.GetAll();
             cbUrunKategorisi.DataSource = kategoriManager.GetAll();//kategoriManager üzerindeki getall metoduyla veritabanındaki tüm kategorileri çekip cburunkategorisi ne verileri yükledik. Sonrasında design tarafından display member alanında veritabanındaki kategori tablosundan gelen veriler üzerinden KategoriAdi sütununu program kullanıcısının göreceği listede gösterdik. Ürün eklerken ise kategoriId sütununa seçilen kategorinin Id değerini atayabilmek için yine design tarafında cbUrunKategorisi ne sağ tık properties yapıp Value Member alanına Id yazıp enter a bastık ki arkayüzde seçilen kategorinin ıd sini yakalayıp Urun tablosundaki KategoriId sütununa yollayabilelim..
             cbUrunMarkasi.DataSource = markaManager.GetAll(); //Markaları çekip cbUrunMarkasi na yükledik, ön yüzden Display Member a MarkaAdi, Value Member a Id yazıp enter dedik.

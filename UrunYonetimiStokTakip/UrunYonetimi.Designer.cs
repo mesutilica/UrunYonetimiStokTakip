@@ -37,6 +37,8 @@ namespace UrunYonetimiStokTakip
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvUrunler = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblId = new System.Windows.Forms.Label();
+            this.lblEklenmeTarihi = new System.Windows.Forms.Label();
             this.txtIskonto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -59,8 +61,14 @@ namespace UrunYonetimiStokTakip
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblEklenmeTarihi = new System.Windows.Forms.Label();
-            this.lblId = new System.Windows.Forms.Label();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UrunAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EklenmeTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Aktif = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UrunFiyati = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Kdv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StokMiktari = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Iskonto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -119,6 +127,15 @@ namespace UrunYonetimiStokTakip
             // 
             this.dgvUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUrunler.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.UrunAdi,
+            this.EklenmeTarihi,
+            this.Aktif,
+            this.UrunFiyati,
+            this.Kdv,
+            this.StokMiktari,
+            this.Iskonto});
             this.dgvUrunler.Location = new System.Drawing.Point(12, 30);
             this.dgvUrunler.Name = "dgvUrunler";
             this.dgvUrunler.Size = new System.Drawing.Size(776, 408);
@@ -157,6 +174,23 @@ namespace UrunYonetimiStokTakip
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ürün Bilgileri";
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(256, 16);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(13, 13);
+            this.lblId.TabIndex = 5;
+            this.lblId.Text = "0";
+            // 
+            // lblEklenmeTarihi
+            // 
+            this.lblEklenmeTarihi.AutoSize = true;
+            this.lblEklenmeTarihi.Location = new System.Drawing.Point(131, 348);
+            this.lblEklenmeTarihi.Name = "lblEklenmeTarihi";
+            this.lblEklenmeTarihi.Size = new System.Drawing.Size(0, 13);
+            this.lblEklenmeTarihi.TabIndex = 21;
             // 
             // txtIskonto
             // 
@@ -351,22 +385,61 @@ namespace UrunYonetimiStokTakip
             this.label1.TabIndex = 0;
             this.label1.Text = "Ürün Adı";
             // 
-            // lblEklenmeTarihi
+            // Id
             // 
-            this.lblEklenmeTarihi.AutoSize = true;
-            this.lblEklenmeTarihi.Location = new System.Drawing.Point(131, 348);
-            this.lblEklenmeTarihi.Name = "lblEklenmeTarihi";
-            this.lblEklenmeTarihi.Size = new System.Drawing.Size(0, 10);
-            this.lblEklenmeTarihi.TabIndex = 21;
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "No";
+            this.Id.Name = "Id";
+            this.Id.Width = 46;
             // 
-            // lblId
+            // UrunAdi
             // 
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(256, 16);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(10, 10);
-            this.lblId.TabIndex = 5;
-            this.lblId.Text = "0";
+            this.UrunAdi.DataPropertyName = "UrunAdi";
+            this.UrunAdi.HeaderText = "Ürün Adı";
+            this.UrunAdi.Name = "UrunAdi";
+            this.UrunAdi.Width = 73;
+            // 
+            // EklenmeTarihi
+            // 
+            this.EklenmeTarihi.DataPropertyName = "EklenmeTarihi";
+            this.EklenmeTarihi.HeaderText = "Eklenme Tarihi";
+            this.EklenmeTarihi.Name = "EklenmeTarihi";
+            this.EklenmeTarihi.Width = 102;
+            // 
+            // Aktif
+            // 
+            this.Aktif.DataPropertyName = "Aktif";
+            this.Aktif.HeaderText = "Durum";
+            this.Aktif.Name = "Aktif";
+            this.Aktif.Width = 63;
+            // 
+            // UrunFiyati
+            // 
+            this.UrunFiyati.DataPropertyName = "UrunFiyati";
+            this.UrunFiyati.HeaderText = "Ürün Fiyatı";
+            this.UrunFiyati.Name = "UrunFiyati";
+            this.UrunFiyati.Width = 82;
+            // 
+            // Kdv
+            // 
+            this.Kdv.DataPropertyName = "Kdv";
+            this.Kdv.HeaderText = "Kdv";
+            this.Kdv.Name = "Kdv";
+            this.Kdv.Width = 51;
+            // 
+            // StokMiktari
+            // 
+            this.StokMiktari.DataPropertyName = "StokMiktari";
+            this.StokMiktari.HeaderText = "Stok Miktarı";
+            this.StokMiktari.Name = "StokMiktari";
+            this.StokMiktari.Width = 88;
+            // 
+            // Iskonto
+            // 
+            this.Iskonto.DataPropertyName = "Iskonto";
+            this.Iskonto.HeaderText = "İskonto";
+            this.Iskonto.Name = "Iskonto";
+            this.Iskonto.Width = 67;
             // 
             // UrunYonetimi
             // 
@@ -398,7 +471,6 @@ namespace UrunYonetimiStokTakip
         private System.Windows.Forms.ToolStripMenuItem ürünYönetimiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kullanıcıYönetimiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dgvUrunler;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnEkle;
@@ -424,5 +496,14 @@ namespace UrunYonetimiStokTakip
         private System.Windows.Forms.TextBox txtIskonto;
         private System.Windows.Forms.Label lblEklenmeTarihi;
         private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UrunAdi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EklenmeTarihi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Aktif;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UrunFiyati;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Kdv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StokMiktari;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Iskonto;
+        private System.Windows.Forms.DataGridView dgvUrunler;
     }
 }

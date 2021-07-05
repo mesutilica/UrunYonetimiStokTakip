@@ -37,6 +37,8 @@ namespace UrunYonetimiStokTakip
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvMusteriler = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtAdres = new System.Windows.Forms.TextBox();
+            this.txtTelefon = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@ namespace UrunYonetimiStokTakip
             this.btnSil = new System.Windows.Forms.Button();
             this.btnEkle = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
-            this.txtTelefon = new System.Windows.Forms.TextBox();
-            this.txtAdres = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMusteriler)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -109,6 +109,7 @@ namespace UrunYonetimiStokTakip
             this.dgvMusteriler.Name = "dgvMusteriler";
             this.dgvMusteriler.Size = new System.Drawing.Size(444, 408);
             this.dgvMusteriler.TabIndex = 2;
+            this.dgvMusteriler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMusteriler_CellClick);
             // 
             // groupBox1
             // 
@@ -132,6 +133,21 @@ namespace UrunYonetimiStokTakip
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Bilgileri";
+            // 
+            // txtAdres
+            // 
+            this.txtAdres.Location = new System.Drawing.Point(134, 144);
+            this.txtAdres.Multiline = true;
+            this.txtAdres.Name = "txtAdres";
+            this.txtAdres.Size = new System.Drawing.Size(100, 32);
+            this.txtAdres.TabIndex = 19;
+            // 
+            // txtTelefon
+            // 
+            this.txtTelefon.Location = new System.Drawing.Point(134, 113);
+            this.txtTelefon.Name = "txtTelefon";
+            this.txtTelefon.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefon.TabIndex = 18;
             // 
             // label2
             // 
@@ -186,18 +202,18 @@ namespace UrunYonetimiStokTakip
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(35, 61);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.Size = new System.Drawing.Size(37, 10);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Soyadı";
+            this.label6.Text = "Soyadı *";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(34, 32);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 13);
+            this.label5.Size = new System.Drawing.Size(23, 10);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Adı";
+            this.label5.Text = "Adı *";
             // 
             // label4
             // 
@@ -216,6 +232,7 @@ namespace UrunYonetimiStokTakip
             this.btnSil.TabIndex = 6;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnEkle
             // 
@@ -237,21 +254,6 @@ namespace UrunYonetimiStokTakip
             this.btnGuncelle.UseVisualStyleBackColor = true;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
-            // txtTelefon
-            // 
-            this.txtTelefon.Location = new System.Drawing.Point(134, 113);
-            this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Size = new System.Drawing.Size(100, 20);
-            this.txtTelefon.TabIndex = 18;
-            // 
-            // txtAdres
-            // 
-            this.txtAdres.Location = new System.Drawing.Point(134, 144);
-            this.txtAdres.Multiline = true;
-            this.txtAdres.Name = "txtAdres";
-            this.txtAdres.Size = new System.Drawing.Size(100, 32);
-            this.txtAdres.TabIndex = 19;
-            // 
             // MusteriYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +263,7 @@ namespace UrunYonetimiStokTakip
             this.Controls.Add(this.dgvMusteriler);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MusteriYonetimi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri Yönetimi";
             this.Load += new System.EventHandler(this.MusteriYonetimi_Load);
             this.menuStrip1.ResumeLayout(false);

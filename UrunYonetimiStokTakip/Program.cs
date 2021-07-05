@@ -13,7 +13,7 @@ namespace UrunYonetimiStokTakip
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MusteriYonetimi());
+            Application.Run(new Giris());
         }
     }
 }

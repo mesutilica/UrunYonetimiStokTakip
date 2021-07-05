@@ -51,7 +51,7 @@ namespace UrunYonetimiStokTakip
             }
             catch (Exception hata) //buradaki hata nesnesinden hata detaylarına ulaşabiliriz
             {
-                MessageBox.Show("Hata Oluştu! Kayıt Eklenemedi!n\\Boş Alan Bırakmadan Tekrar Deneyin!");
+                MessageBox.Show("Hata Oluştu! Kayıt Eklenemedi!n\\Boş Alan Bırakmadan Tekrar Deneyin!" + hata.Message);
             }
         }
 
