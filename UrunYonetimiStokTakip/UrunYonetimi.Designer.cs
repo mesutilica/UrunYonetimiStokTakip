@@ -36,6 +36,14 @@ namespace UrunYonetimiStokTakip
             this.kullanıcıYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvUrunler = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UrunAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EklenmeTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Aktif = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UrunFiyati = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Kdv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StokMiktari = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Iskonto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblId = new System.Windows.Forms.Label();
             this.lblEklenmeTarihi = new System.Windows.Forms.Label();
@@ -61,14 +69,6 @@ namespace UrunYonetimiStokTakip
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UrunAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EklenmeTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Aktif = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UrunFiyati = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Kdv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StokMiktari = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Iskonto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -85,7 +85,7 @@ namespace UrunYonetimiStokTakip
             this.çıkışToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1132, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(1011, 27);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -138,9 +138,65 @@ namespace UrunYonetimiStokTakip
             this.Iskonto});
             this.dgvUrunler.Location = new System.Drawing.Point(12, 30);
             this.dgvUrunler.Name = "dgvUrunler";
-            this.dgvUrunler.Size = new System.Drawing.Size(776, 408);
+            this.dgvUrunler.Size = new System.Drawing.Size(660, 408);
             this.dgvUrunler.TabIndex = 3;
             this.dgvUrunler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUrunler_CellClick);
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "No";
+            this.Id.Name = "Id";
+            this.Id.Width = 46;
+            // 
+            // UrunAdi
+            // 
+            this.UrunAdi.DataPropertyName = "UrunAdi";
+            this.UrunAdi.HeaderText = "Ürün Adı";
+            this.UrunAdi.Name = "UrunAdi";
+            this.UrunAdi.Width = 73;
+            // 
+            // EklenmeTarihi
+            // 
+            this.EklenmeTarihi.DataPropertyName = "EklenmeTarihi";
+            this.EklenmeTarihi.HeaderText = "Eklenme Tarihi";
+            this.EklenmeTarihi.Name = "EklenmeTarihi";
+            this.EklenmeTarihi.Width = 102;
+            // 
+            // Aktif
+            // 
+            this.Aktif.DataPropertyName = "Aktif";
+            this.Aktif.HeaderText = "Durum";
+            this.Aktif.Name = "Aktif";
+            this.Aktif.Width = 63;
+            // 
+            // UrunFiyati
+            // 
+            this.UrunFiyati.DataPropertyName = "UrunFiyati";
+            this.UrunFiyati.HeaderText = "Ürün Fiyatı";
+            this.UrunFiyati.Name = "UrunFiyati";
+            this.UrunFiyati.Width = 82;
+            // 
+            // Kdv
+            // 
+            this.Kdv.DataPropertyName = "Kdv";
+            this.Kdv.HeaderText = "Kdv";
+            this.Kdv.Name = "Kdv";
+            this.Kdv.Width = 51;
+            // 
+            // StokMiktari
+            // 
+            this.StokMiktari.DataPropertyName = "StokMiktari";
+            this.StokMiktari.HeaderText = "Stok Miktarı";
+            this.StokMiktari.Name = "StokMiktari";
+            this.StokMiktari.Width = 88;
+            // 
+            // Iskonto
+            // 
+            this.Iskonto.DataPropertyName = "Iskonto";
+            this.Iskonto.HeaderText = "İskonto";
+            this.Iskonto.Name = "Iskonto";
+            this.Iskonto.Width = 67;
             // 
             // groupBox1
             // 
@@ -168,7 +224,7 @@ namespace UrunYonetimiStokTakip
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(794, 30);
+            this.groupBox1.Location = new System.Drawing.Point(678, 30);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(326, 394);
             this.groupBox1.TabIndex = 4;
@@ -385,67 +441,11 @@ namespace UrunYonetimiStokTakip
             this.label1.TabIndex = 0;
             this.label1.Text = "Ürün Adı";
             // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "No";
-            this.Id.Name = "Id";
-            this.Id.Width = 46;
-            // 
-            // UrunAdi
-            // 
-            this.UrunAdi.DataPropertyName = "UrunAdi";
-            this.UrunAdi.HeaderText = "Ürün Adı";
-            this.UrunAdi.Name = "UrunAdi";
-            this.UrunAdi.Width = 73;
-            // 
-            // EklenmeTarihi
-            // 
-            this.EklenmeTarihi.DataPropertyName = "EklenmeTarihi";
-            this.EklenmeTarihi.HeaderText = "Eklenme Tarihi";
-            this.EklenmeTarihi.Name = "EklenmeTarihi";
-            this.EklenmeTarihi.Width = 102;
-            // 
-            // Aktif
-            // 
-            this.Aktif.DataPropertyName = "Aktif";
-            this.Aktif.HeaderText = "Durum";
-            this.Aktif.Name = "Aktif";
-            this.Aktif.Width = 63;
-            // 
-            // UrunFiyati
-            // 
-            this.UrunFiyati.DataPropertyName = "UrunFiyati";
-            this.UrunFiyati.HeaderText = "Ürün Fiyatı";
-            this.UrunFiyati.Name = "UrunFiyati";
-            this.UrunFiyati.Width = 82;
-            // 
-            // Kdv
-            // 
-            this.Kdv.DataPropertyName = "Kdv";
-            this.Kdv.HeaderText = "Kdv";
-            this.Kdv.Name = "Kdv";
-            this.Kdv.Width = 51;
-            // 
-            // StokMiktari
-            // 
-            this.StokMiktari.DataPropertyName = "StokMiktari";
-            this.StokMiktari.HeaderText = "Stok Miktarı";
-            this.StokMiktari.Name = "StokMiktari";
-            this.StokMiktari.Width = 88;
-            // 
-            // Iskonto
-            // 
-            this.Iskonto.DataPropertyName = "Iskonto";
-            this.Iskonto.HeaderText = "İskonto";
-            this.Iskonto.Name = "Iskonto";
-            this.Iskonto.Width = 67;
-            // 
             // UrunYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 450);
+            this.ClientSize = new System.Drawing.Size(1011, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvUrunler);
             this.Controls.Add(this.menuStrip1);

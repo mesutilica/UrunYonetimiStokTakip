@@ -16,5 +16,7 @@ namespace Entities
         public int StokMiktari { get; set; }
         public int Iskonto { get; set; }
         public decimal ToptanFiyat { get; set; }
+        public virtual Kategori Kategori { get; set; }
+        public virtual Marka Marka { get; set; }
     }
 }

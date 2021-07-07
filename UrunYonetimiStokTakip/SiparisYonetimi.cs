@@ -30,6 +30,8 @@ namespace UrunYonetimiStokTakip
             cbUrunler.DataSource = urun.GetAll();
             cbUrunler.DisplayMember = "UrunAdi";
             cbUrunler.ValueMember = "Id";
+            dgvSiparisler.Columns.Remove("Urun");
+            dgvSiparisler.Columns.Remove("Musteri");
         }
         private void SiparisYonetimi_Load(object sender, EventArgs e)
         {

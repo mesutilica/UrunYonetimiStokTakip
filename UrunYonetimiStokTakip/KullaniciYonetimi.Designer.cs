@@ -37,6 +37,7 @@ namespace UrunYonetimiStokTakip
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvKullanicilar = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblId = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtSoyadi = new System.Windows.Forms.TextBox();
             this.txtAdi = new System.Windows.Forms.TextBox();
@@ -52,7 +53,6 @@ namespace UrunYonetimiStokTakip
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblId = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -141,6 +141,15 @@ namespace UrunYonetimiStokTakip
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kullanıcı Bilgileri";
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(245, 172);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(13, 13);
+            this.lblId.TabIndex = 6;
+            this.lblId.Text = "0";
             // 
             // label7
             // 
@@ -272,15 +281,6 @@ namespace UrunYonetimiStokTakip
             this.label1.TabIndex = 0;
             this.label1.Text = "Kullanıcı Adı";
             // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(245, 172);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(13, 13);
-            this.lblId.TabIndex = 6;
-            this.lblId.Text = "0";
-            // 
             // KullaniciYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,6 +290,7 @@ namespace UrunYonetimiStokTakip
             this.Controls.Add(this.dgvKullanicilar);
             this.Controls.Add(this.menuStrip1);
             this.Name = "KullaniciYonetimi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kullanıcı Yönetimi";
             this.Load += new System.EventHandler(this.KullaniciYonetimi_Load);
             this.menuStrip1.ResumeLayout(false);

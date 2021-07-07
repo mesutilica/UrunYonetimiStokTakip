@@ -242,6 +242,7 @@ namespace UrunYonetimiStokTakip
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MarkaYonetimi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MarkaYonetimi";
             this.Load += new System.EventHandler(this.MarkaYonetimi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarkalar)).EndInit();

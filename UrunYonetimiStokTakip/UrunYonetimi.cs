@@ -175,22 +175,28 @@ namespace UrunYonetimiStokTakip
 
         private void kategoriYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            KategoriYonetimi kategoriYonetimi = new KategoriYonetimi();
+            this.Close();
+            kategoriYonetimi.ShowDialog();
         }
 
         private void markaYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            MarkaYonetimi markaYonetimi = new MarkaYonetimi();
+            this.Close();
+            markaYonetimi.ShowDialog();
         }
 
         private void kullanıcıYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            KullaniciYonetimi kullaniciYonetimi = new KullaniciYonetimi();
+            this.Close();
+            kullaniciYonetimi.ShowDialog();
         }
 
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

@@ -10,10 +10,10 @@ namespace DAL.Migrations
         {
             AutomaticMigrationsEnabled = true; //veritabanı değişikliklerini otomatik olarak uygula
             AutomaticMigrationDataLossAllowed = true; //olası veri kayıplarını kabul ediyorum
-            ContextKey = "DAL.DatabaseContext";
+            //ContextKey = "DAL.DatabaseContext";
         }
 
-        protected override void Seed(DAL.DatabaseContext context)
+        protected override void Seed(DatabaseContext context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -54,13 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseContext.cs" />
-    <Compile Include="Migrations\202106251622410_InitialCreate.cs" />
-    <Compile Include="Migrations\202106251622410_InitialCreate.designer.cs">
-      <DependentUpon>202106251622410_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106251733349_SiparisTablosuEklendi.cs" />
-    <Compile Include="Migrations\202106251733349_SiparisTablosuEklendi.designer.cs">
-      <DependentUpon>202106251733349_SiparisTablosuEklendi.cs</DependentUpon>
+    <Compile Include="Migrations\202107071646462_TabloBaglantilari.cs" />
+    <Compile Include="Migrations\202107071646462_TabloBaglantilari.designer.cs">
+      <DependentUpon>202107071646462_TabloBaglantilari.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,11 +72,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202106251622410_InitialCreate.resx">
-      <DependentUpon>202106251622410_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106251733349_SiparisTablosuEklendi.resx">
-      <DependentUpon>202106251733349_SiparisTablosuEklendi.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202107071646462_TabloBaglantilari.resx">
+      <DependentUpon>202107071646462_TabloBaglantilari.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

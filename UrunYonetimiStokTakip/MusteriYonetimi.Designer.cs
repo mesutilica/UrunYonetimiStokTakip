@@ -76,30 +76,35 @@ namespace UrunYonetimiStokTakip
             this.kategoriYönetimiToolStripMenuItem.Name = "kategoriYönetimiToolStripMenuItem";
             this.kategoriYönetimiToolStripMenuItem.Size = new System.Drawing.Size(129, 23);
             this.kategoriYönetimiToolStripMenuItem.Text = "Kategori Yönetimi";
+            this.kategoriYönetimiToolStripMenuItem.Click += new System.EventHandler(this.kategoriYönetimiToolStripMenuItem_Click);
             // 
             // markaYönetimiToolStripMenuItem
             // 
             this.markaYönetimiToolStripMenuItem.Name = "markaYönetimiToolStripMenuItem";
             this.markaYönetimiToolStripMenuItem.Size = new System.Drawing.Size(117, 23);
             this.markaYönetimiToolStripMenuItem.Text = "Marka Yönetimi";
+            this.markaYönetimiToolStripMenuItem.Click += new System.EventHandler(this.markaYönetimiToolStripMenuItem_Click);
             // 
             // ürünYönetimiToolStripMenuItem
             // 
             this.ürünYönetimiToolStripMenuItem.Name = "ürünYönetimiToolStripMenuItem";
             this.ürünYönetimiToolStripMenuItem.Size = new System.Drawing.Size(109, 23);
             this.ürünYönetimiToolStripMenuItem.Text = "Ürün Yönetimi";
+            this.ürünYönetimiToolStripMenuItem.Click += new System.EventHandler(this.ürünYönetimiToolStripMenuItem_Click);
             // 
             // kullanıcıYönetimiToolStripMenuItem
             // 
             this.kullanıcıYönetimiToolStripMenuItem.Name = "kullanıcıYönetimiToolStripMenuItem";
             this.kullanıcıYönetimiToolStripMenuItem.Size = new System.Drawing.Size(127, 23);
             this.kullanıcıYönetimiToolStripMenuItem.Text = "Kullanıcı Yönetimi";
+            this.kullanıcıYönetimiToolStripMenuItem.Click += new System.EventHandler(this.kullanıcıYönetimiToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
             this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(49, 23);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // dgvMusteriler
             // 
@@ -202,7 +207,7 @@ namespace UrunYonetimiStokTakip
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(35, 61);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 10);
+            this.label6.Size = new System.Drawing.Size(46, 13);
             this.label6.TabIndex = 9;
             this.label6.Text = "Soyadı *";
             // 
@@ -211,7 +216,7 @@ namespace UrunYonetimiStokTakip
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(34, 32);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(23, 10);
+            this.label5.Size = new System.Drawing.Size(29, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Adı *";
             // 

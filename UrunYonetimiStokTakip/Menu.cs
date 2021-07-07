@@ -52,5 +52,10 @@ namespace UrunYonetimiStokTakip
             UrunYonetimi urunYonetimi = new UrunYonetimi();
             urunYonetimi.ShowDialog();
         }
+
+        private void Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

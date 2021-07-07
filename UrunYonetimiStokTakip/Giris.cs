@@ -26,11 +26,12 @@ namespace UrunYonetimiStokTakip
             }
             else
             {
-                var kullanici = manager.Find(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == txtSifre.Text);
+                var kullanici = manager.Find(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == txtSifre.Text && k.Aktif == true);
                 if (kullanici != null)
                 {                    
                     Menu menu = new Menu();
-                    menu.Show();                    
+                    this.Hide();
+                    menu.Show();
                 }
                 else MessageBox.Show("Giriş Başarısız!");
             }            
