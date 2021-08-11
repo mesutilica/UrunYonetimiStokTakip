@@ -74,6 +74,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="KategoriYonetimi.aspx" />
+    <Content Include="KullaniciYonetimi.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="KategoriYonetimi.aspx.designer.cs">
       <DependentUpon>KategoriYonetimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciYonetimi.aspx.cs">
+      <DependentUpon>KullaniciYonetimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KullaniciYonetimi.aspx.designer.cs">
+      <DependentUpon>KullaniciYonetimi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

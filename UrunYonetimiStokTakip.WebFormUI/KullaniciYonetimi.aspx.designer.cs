@@ -11,44 +11,62 @@ namespace UrunYonetimiStokTakip.WebFormUI
 {
 
 
-    public partial class KategoriYonetimi
+    public partial class KullaniciYonetimi
     {
 
         /// <summary>
-        /// dgvKategoriler control.
+        /// dgvKullanicilar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvKategoriler;
+        protected global::System.Web.UI.WebControls.GridView dgvKullanicilar;
 
         /// <summary>
-        /// txtKategoriAdi control.
+        /// txtKullaniciAdi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtKategoriAdi;
+        protected global::System.Web.UI.WebControls.TextBox txtKullaniciAdi;
 
         /// <summary>
-        /// txtKategoriAciklamasi control.
+        /// txtSifre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtKategoriAciklamasi;
+        protected global::System.Web.UI.WebControls.TextBox txtSifre;
 
         /// <summary>
-        /// lblId control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblId;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+
+        /// <summary>
+        /// txtAdi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAdi;
+
+        /// <summary>
+        /// txtSoyadi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSoyadi;
 
         /// <summary>
         /// cbDurum control.
@@ -60,22 +78,13 @@ namespace UrunYonetimiStokTakip.WebFormUI
         protected global::System.Web.UI.WebControls.CheckBox cbDurum;
 
         /// <summary>
-        /// lblEklenmeTarihi control.
+        /// lblId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEklenmeTarihi;
-
-        /// <summary>
-        /// lblMesaj control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMesaj;
+        protected global::System.Web.UI.WebControls.Label lblId;
 
         /// <summary>
         /// btnEkle control.

@@ -13,7 +13,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Kategori Yönetimi</h1>
     <div>
-        <asp:GridView ID="dgvKategoriler" runat="server">
+        <asp:GridView ID="dgvKategoriler" runat="server" OnSelectedIndexChanged="dgvKategoriler_SelectedIndexChanged">
+            <Columns>
+                <asp:CommandField CancelText="İptal" DeleteText="Sil" EditText="Düzenle" SelectText="Seç" ShowSelectButton="True" />
+            </Columns>
         </asp:GridView>
         <table class="auto-style1">
             <tr>
@@ -29,7 +32,9 @@
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="lblId" runat="server" Text="0"></asp:Label>
+                </td>
                 <td>
                     <asp:CheckBox ID="cbDurum" runat="server" Text="Durum" />
                 </td>
@@ -37,7 +42,7 @@
             <tr>
                 <td>Eklenme Tarihi</td>
                 <td>
-                    <asp:Label ID="lblTarih" runat="server"></asp:Label>
+                    <asp:Label ID="lblEklenmeTarihi" runat="server"></asp:Label>
                 </td>
             </tr>
             <tr>
