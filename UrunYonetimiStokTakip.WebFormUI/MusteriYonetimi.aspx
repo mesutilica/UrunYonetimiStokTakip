@@ -1,19 +1,16 @@
-﻿<%@ Page Title="Kategori Yönetimi" Language="C#" MasterPageFile="~/AnaSablon.Master" AutoEventWireup="true" CodeBehind="KategoriYonetimi.aspx.cs" Inherits="UrunYonetimiStokTakip.WebFormUI.KategoriYonetimi" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AnaSablon.Master" AutoEventWireup="true" CodeBehind="MusteriYonetimi.aspx.cs" Inherits="UrunYonetimiStokTakip.WebFormUI.MusteriYonetimi" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    
     <style type="text/css">
         .auto-style1 {
             width: 100%;
         }
     </style>
-    
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Kategori Yönetimi</h1>
-    <div>
-        <asp:GridView ID="dgvKategoriler" runat="server" OnSelectedIndexChanged="dgvKategoriler_SelectedIndexChanged" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+    <h1>Müşteri Yönetimi</h1>
+        <asp:GridView ID="dgvMusteriler" runat="server" OnSelectedIndexChanged="dgvMusteriler_SelectedIndexChanged" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
             <Columns>
                 <asp:CommandField CancelText="İptal" DeleteText="Sil" EditText="Düzenle" SelectText="Seç" ShowSelectButton="True" />
             </Columns>
@@ -29,15 +26,33 @@
         </asp:GridView>
         <table class="auto-style1">
             <tr>
-                <td>Kategori Adı</td>
+                <td>Adı</td>
                 <td>
-                    <asp:TextBox ID="txtKategoriAdi" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtAdi" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>Kategori Açıklaması</td>
+                <td>Soyadı</td>
                 <td>
-                    <asp:TextBox ID="txtKategoriAciklamasi" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtSoyadi" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>Telefon</td>
+                <td>
+                    <asp:TextBox ID="txtTelefon" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>Adres</td>
+                <td>
+                    <asp:TextBox ID="txtAdres" runat="server" TextMode="MultiLine"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -45,25 +60,12 @@
                     <asp:Label ID="lblId" runat="server" Text="0"></asp:Label>
                 </td>
                 <td>
-                    <asp:CheckBox ID="cbDurum" runat="server" Text="Durum" />
-                </td>
-            </tr>
-            <tr>
-                <td>Eklenme Tarihi</td>
-                <td>
-                    <asp:Label ID="lblEklenmeTarihi" runat="server"></asp:Label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <asp:Label ID="lblMesaj" runat="server" ForeColor="Red"></asp:Label>
-                </td>
-                <td>
                     <asp:Button ID="btnEkle" runat="server" OnClick="btnEkle_Click" Text="Ekle" />
                     <asp:Button ID="btnGuncelle" runat="server" OnClick="btnGuncelle_Click" Text="Güncelle" Width="77px" />
                     <asp:Button ID="btnSil" runat="server" OnClick="btnSil_Click" Text="Sil" />
                 </td>
             </tr>
-        </table>
-    </div>
+    </table>
+    <br />
+
 </asp:Content>

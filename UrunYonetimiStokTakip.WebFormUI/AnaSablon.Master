@@ -5,15 +5,31 @@
 <html>
 <head runat="server">
     <title></title>
-    <%--<style>
-        body { background-color: red; color:white; }
-    </style>--%>
+    <style>
+        #menu { display: flex; align-content: center; justify-content: center; align-items: center; list-style: none; }
+            #menu li { border-right: 1px solid #F7F6F3; padding: 1rem; }
+                #menu li:last-child { border-right: none; }
+                #menu li:hover { background-color: #F7F6F3; }
+            #menu a { color: black; text-decoration: none; }
+                #menu a:hover { color: red }
+    </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+            <ul id="menu">
+                <li><a href="/">Giriş</a></li>
+                <li><a href="/KategoriYonetimi.aspx">Kategori Yönetimi</a></li>
+                <li><a href="/KullaniciYonetimi.aspx">Kullanıcı Yönetimi</a></li>
+                <li><a href="/MarkaYonetimi.aspx">Marka Yönetimi</a></li>
+                <li><a href="#">Müşteri Yönetimi</a></li>
+                <li><a href="#">Sipariş Yönetimi</a></li>
+                <li><a href="#">Ürün Yönetimi</a></li>
+                <li><a href="#">Çıkış</a></li>
+            </ul>
+            <hr />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
