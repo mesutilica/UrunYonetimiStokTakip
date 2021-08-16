@@ -12,9 +12,9 @@ namespace UrunYonetimiStokTakip.WebFormUI
     public partial class MusteriYonetimi : System.Web.UI.Page
     {
         MusteriManager manager = new MusteriManager();
-        void Yukle()
+        void Yukle(string text = "")
         {
-            dgvMusteriler.DataSource = manager.GetAll();
+            dgvMusteriler.DataSource = manager.GetAll(x => x.Adi.Contains(text));
             dgvMusteriler.DataBind();
         }
         protected void Page_Load(object sender, EventArgs e)
@@ -141,6 +141,11 @@ namespace UrunYonetimiStokTakip.WebFormUI
         void MessageBox(string mesaj)
         {
             ClientScript.RegisterStartupScript(Page.GetType(), "Uyarı", $"<script>alert('{mesaj}')</script>");
+        }
+
+        protected void btnAra_Click(object sender, EventArgs e)
+        {
+            Yukle(txtAra.Text);
         }
     }
 }

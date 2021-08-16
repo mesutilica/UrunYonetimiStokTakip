@@ -18,15 +18,16 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div>
             <ul id="menu">
                 <li><a href="/">Giriş</a></li>
                 <li><a href="/KategoriYonetimi.aspx">Kategori Yönetimi</a></li>
                 <li><a href="/KullaniciYonetimi.aspx">Kullanıcı Yönetimi</a></li>
                 <li><a href="/MarkaYonetimi.aspx">Marka Yönetimi</a></li>
-                <li><a href="#">Müşteri Yönetimi</a></li>
-                <li><a href="#">Sipariş Yönetimi</a></li>
-                <li><a href="#">Ürün Yönetimi</a></li>
+                <li><a href="/MusteriYonetimi.aspx">Müşteri Yönetimi</a></li>
+                <li><a href="/SiparisYonetimi.aspx">Sipariş Yönetimi</a></li>
+                <li><a href="/UrunYonetimi.aspx">Ürün Yönetimi</a></li>
                 <li><a href="#">Çıkış</a></li>
             </ul>
             <hr />

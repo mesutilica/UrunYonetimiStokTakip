@@ -11,89 +11,53 @@ namespace UrunYonetimiStokTakip.WebFormUI
 {
 
 
-    public partial class MusteriYonetimi
+    public partial class SiparisYonetimi
     {
 
         /// <summary>
-        /// txtAra control.
+        /// dgvSiparisler control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAra;
+        protected global::System.Web.UI.WebControls.GridView dgvSiparisler;
 
         /// <summary>
-        /// btnAra control.
+        /// txtSiparisNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAra;
+        protected global::System.Web.UI.WebControls.TextBox txtSiparisNo;
 
         /// <summary>
-        /// dgvMusteriler control.
+        /// cbMusteriler control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvMusteriler;
+        protected global::System.Web.UI.WebControls.DropDownList cbMusteriler;
 
         /// <summary>
-        /// txtAdi control.
+        /// cbUrunler control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAdi;
+        protected global::System.Web.UI.WebControls.DropDownList cbUrunler;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// dtpSiparisTarihi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-
-        /// <summary>
-        /// txtSoyadi control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSoyadi;
-
-        /// <summary>
-        /// txtEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
-
-        /// <summary>
-        /// txtTelefon control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelefon;
-
-        /// <summary>
-        /// txtAdres control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAdres;
+        protected global::System.Web.UI.WebControls.Calendar dtpSiparisTarihi;
 
         /// <summary>
         /// lblId control.
