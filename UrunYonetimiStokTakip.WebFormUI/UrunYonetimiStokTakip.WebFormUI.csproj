@@ -71,17 +71,34 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Login.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="KategoriYonetimi.aspx" />
-    <Content Include="KullaniciYonetimi.aspx" />
-    <Content Include="MarkaYonetimi.aspx" />
-    <Content Include="MusteriYonetimi.aspx" />
-    <Content Include="SiparisYonetimi.aspx" />
-    <Content Include="UrunYonetimi.aspx" />
+    <Content Include="Admin\KategoriYonetimi.aspx" />
+    <Content Include="Admin\KullaniciYonetimi.aspx" />
+    <Content Include="Admin\MarkaYonetimi.aspx" />
+    <Content Include="Admin\MusteriYonetimi.aspx" />
+    <Content Include="Admin\SiparisYonetimi.aspx" />
+    <Content Include="Admin\UrunYonetimi.aspx" />
+    <Content Include="UrunDetay.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AnaSablon.Master.cs">
       <DependentUpon>AnaSablon.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,48 +116,55 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="KategoriYonetimi.aspx.cs">
+    <Compile Include="Admin\KategoriYonetimi.aspx.cs">
       <DependentUpon>KategoriYonetimi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="KategoriYonetimi.aspx.designer.cs">
+    <Compile Include="Admin\KategoriYonetimi.aspx.designer.cs">
       <DependentUpon>KategoriYonetimi.aspx</DependentUpon>
     </Compile>
-    <Compile Include="KullaniciYonetimi.aspx.cs">
+    <Compile Include="Admin\KullaniciYonetimi.aspx.cs">
       <DependentUpon>KullaniciYonetimi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="KullaniciYonetimi.aspx.designer.cs">
+    <Compile Include="Admin\KullaniciYonetimi.aspx.designer.cs">
       <DependentUpon>KullaniciYonetimi.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MarkaYonetimi.aspx.cs">
+    <Compile Include="Admin\MarkaYonetimi.aspx.cs">
       <DependentUpon>MarkaYonetimi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MarkaYonetimi.aspx.designer.cs">
+    <Compile Include="Admin\MarkaYonetimi.aspx.designer.cs">
       <DependentUpon>MarkaYonetimi.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MusteriYonetimi.aspx.cs">
+    <Compile Include="Admin\MusteriYonetimi.aspx.cs">
       <DependentUpon>MusteriYonetimi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MusteriYonetimi.aspx.designer.cs">
+    <Compile Include="Admin\MusteriYonetimi.aspx.designer.cs">
       <DependentUpon>MusteriYonetimi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SiparisYonetimi.aspx.cs">
+    <Compile Include="Admin\SiparisYonetimi.aspx.cs">
       <DependentUpon>SiparisYonetimi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SiparisYonetimi.aspx.designer.cs">
+    <Compile Include="Admin\SiparisYonetimi.aspx.designer.cs">
       <DependentUpon>SiparisYonetimi.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UrunYonetimi.aspx.cs">
+    <Compile Include="Admin\UrunYonetimi.aspx.cs">
       <DependentUpon>UrunYonetimi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UrunYonetimi.aspx.designer.cs">
+    <Compile Include="Admin\UrunYonetimi.aspx.designer.cs">
       <DependentUpon>UrunYonetimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UrunDetay.aspx.cs">
+      <DependentUpon>UrunDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrunDetay.aspx.designer.cs">
+      <DependentUpon>UrunDetay.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

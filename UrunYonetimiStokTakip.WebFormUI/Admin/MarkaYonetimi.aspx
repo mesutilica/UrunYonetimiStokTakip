@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AnaSablon.Master" AutoEventWireup="true" CodeBehind="MarkaYonetimi.aspx.cs" Inherits="UrunYonetimiStokTakip.WebFormUI.MarkaYonetimi" %>
+﻿<%@ Page Title="Marka Yönetimi" Language="C#" MasterPageFile="~/AnaSablon.Master" AutoEventWireup="true" CodeBehind="MarkaYonetimi.aspx.cs" Inherits="UrunYonetimiStokTakip.WebFormUI.MarkaYonetimi" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">

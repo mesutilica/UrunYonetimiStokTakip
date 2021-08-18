@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AnaSablon.Master" AutoEventWireup="true" CodeBehind="SiparisYonetimi.aspx.cs" Inherits="UrunYonetimiStokTakip.WebFormUI.SiparisYonetimi" %>
+﻿<%@ Page Title="Sipariş Yönetimi" Language="C#" MasterPageFile="~/AnaSablon.Master" AutoEventWireup="true" CodeBehind="SiparisYonetimi.aspx.cs" Inherits="UrunYonetimiStokTakip.WebFormUI.SiparisYonetimi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {

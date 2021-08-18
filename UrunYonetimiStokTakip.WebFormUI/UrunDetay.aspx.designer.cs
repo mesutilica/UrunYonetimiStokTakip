@@ -11,7 +11,7 @@ namespace UrunYonetimiStokTakip.WebFormUI
 {
 
 
-    public partial class Default1
+    public partial class UrunDetay
     {
 
         /// <summary>
@@ -24,12 +24,30 @@ namespace UrunYonetimiStokTakip.WebFormUI
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// rptUrunler control.
+        /// baslik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptUrunler;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl baslik;
+
+        /// <summary>
+        /// ImgUrunResim control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImgUrunResim;
+
+        /// <summary>
+        /// ltUrunBilgileri control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltUrunBilgileri;
     }
 }

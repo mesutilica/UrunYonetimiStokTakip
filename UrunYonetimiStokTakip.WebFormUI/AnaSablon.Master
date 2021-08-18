@@ -21,14 +21,16 @@
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div>
             <ul id="menu">
-                <li><a href="/">Giriş</a></li>
-                <li><a href="/KategoriYonetimi.aspx">Kategori Yönetimi</a></li>
-                <li><a href="/KullaniciYonetimi.aspx">Kullanıcı Yönetimi</a></li>
-                <li><a href="/MarkaYonetimi.aspx">Marka Yönetimi</a></li>
-                <li><a href="/MusteriYonetimi.aspx">Müşteri Yönetimi</a></li>
-                <li><a href="/SiparisYonetimi.aspx">Sipariş Yönetimi</a></li>
-                <li><a href="/UrunYonetimi.aspx">Ürün Yönetimi</a></li>
-                <li><a href="#">Çıkış</a></li>
+                <li><a href="/Admin/">Giriş</a></li>
+                <li><a href="/Admin/KategoriYonetimi.aspx">Kategori Yönetimi</a></li>
+                <li><a href="/Admin/KullaniciYonetimi.aspx">Kullanıcı Yönetimi</a></li>
+                <li><a href="/Admin/MarkaYonetimi.aspx">Marka Yönetimi</a></li>
+                <li><a href="/Admin/MusteriYonetimi.aspx">Müşteri Yönetimi</a></li>
+                <li><a href="/Admin/SiparisYonetimi.aspx">Sipariş Yönetimi</a></li>
+                <li><a href="/Admin/UrunYonetimi.aspx">Ürün Yönetimi</a></li>
+                <li>
+                    <asp:LinkButton ID="lbCikis" runat="server" OnClick="lbCikis_Click" OnClientClick="return (confirm('Çıkış yapmak istediğinizden emin misiniz?'))" ValidationGroup="cikis">Çıkış</asp:LinkButton>
+                </li>
             </ul>
             <hr />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
