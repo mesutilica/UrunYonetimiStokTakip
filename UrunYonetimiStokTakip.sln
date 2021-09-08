@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{6A4A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunYonetimiStokTakip.WebFormUI", "UrunYonetimiStokTakip.WebFormUI\UrunYonetimiStokTakip.WebFormUI.csproj", "{EA2FA631-4A94-4A07-A8D8-77BA38FC19EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunYonetimiStokTakip.MvcUI", "UrunYonetimiStokTakip.MvcUI\UrunYonetimiStokTakip.MvcUI.csproj", "{197855A3-7285-4EBF-85AB-3247EF8E3635}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{EA2FA631-4A94-4A07-A8D8-77BA38FC19EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA2FA631-4A94-4A07-A8D8-77BA38FC19EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA2FA631-4A94-4A07-A8D8-77BA38FC19EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{197855A3-7285-4EBF-85AB-3247EF8E3635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{197855A3-7285-4EBF-85AB-3247EF8E3635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{197855A3-7285-4EBF-85AB-3247EF8E3635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{197855A3-7285-4EBF-85AB-3247EF8E3635}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
