@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Entities.Siparis>
+
+@{
+    ViewBag.Title = "Siparişler";
+}
+
+<h2>Siparişler</h2>
+
+<p>
+    @Html.ActionLink("Yeni Ekle", "Create", null, new { @class = "btn btn-info" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Musteri.Adi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Urun.UrunAdi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SiparisNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SiparisTarihi)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Musteri.Adi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Urun.UrunAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SiparisNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SiparisTarihi)
+            </td>
+            <td>
+                @Html.ActionLink("Düzenle", "Edit", new { id = item.Id }, new { @class = "btn btn-sm btn-primary" }) |
+
+                @Html.ActionLink("Sil", "Delete", new { id = item.Id }, new { @class = "btn btn-sm btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
