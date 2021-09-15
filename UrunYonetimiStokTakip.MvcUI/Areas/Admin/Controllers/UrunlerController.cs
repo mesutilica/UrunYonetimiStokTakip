@@ -88,10 +88,21 @@ namespace UrunYonetimiStokTakip.MvcUI.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Urun urun)
+        public ActionResult Edit(Urun urun, HttpPostedFileBase Resim, bool cbResimSil)
         {
             if (ModelState.IsValid)
             {
+                if (cbResimSil == true)
+                {
+                    urun.Resim = string.Empty;
+                }
+                if (Resim != null)
+                {
+                    string directory = Server.MapPath("~/Img/");
+                    var fileName = Path.GetFileName(Resim.FileName);
+                    Resim.SaveAs(Path.Combine(directory, fileName));
+                    urun.Resim = Resim.FileName;
+                }
                 manager.Update(urun);
                 
                 return RedirectToAction("Index");

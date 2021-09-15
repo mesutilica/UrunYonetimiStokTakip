@@ -9,7 +9,7 @@
 <p>
     @Html.ActionLink("Yeni Ekle", "Create", null, new { @class = "btn btn-info" })
 </p>
-<table class="table">
+<table class="table table-striped table-hover">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Kategori.KategoriAdi)
@@ -70,7 +70,6 @@
             
             <td>
                 <img src="~/Img/@Html.DisplayFor(modelItem => item.Resim)" alt="" height="40" />
-                
             </td>
             <td>
                 @Html.ActionLink("Düzenle", "Edit", new { id = item.Id }, new { @class = "btn btn-sm btn-primary" }) |

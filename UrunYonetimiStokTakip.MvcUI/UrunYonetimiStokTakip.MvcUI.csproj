@@ -142,6 +142,7 @@
     <Compile Include="Areas\Admin\Controllers\DefaultController.cs" />
     <Compile Include="Areas\Admin\Controllers\KategoriController.cs" />
     <Compile Include="Areas\Admin\Controllers\KullaniciController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\MarkalarController.cs" />
     <Compile Include="Areas\Admin\Controllers\MusterilerController.cs" />
     <Compile Include="Areas\Admin\Controllers\SiparislerController.cs" />
@@ -211,6 +212,7 @@
     <Content Include="Areas\Admin\Views\Urunler\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Urunler\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Urunler\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
