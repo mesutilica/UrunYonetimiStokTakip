@@ -1,0 +1,16 @@
+﻿@model Entities.Urun
+
+@{
+    ViewBag.Title = "Urun Detay";
+}
+<div class="container">
+    <h2>@Model.UrunAdi Ürün Detayı</h2>
+
+    <div class="col-lg-10">
+        <img src="~/Img/@Model.Resim" alt="" class="img-thumbnail" />
+        <h2>@Model.UrunAdi</h2>
+        <p>@Model.UrunFiyati TL</p>
+        <p>@Model.Aciklama</p>
+
+    </div>
+</div>

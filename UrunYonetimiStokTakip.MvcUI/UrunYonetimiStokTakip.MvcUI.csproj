@@ -146,11 +146,13 @@
     <Compile Include="Areas\Admin\Controllers\MarkalarController.cs" />
     <Compile Include="Areas\Admin\Controllers\MusterilerController.cs" />
     <Compile Include="Areas\Admin\Controllers\SiparislerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SlidersController.cs" />
     <Compile Include="Areas\Admin\Controllers\UrunlerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AnasayfaVM.cs" />
     <Compile Include="Models\DatabaseContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -213,6 +215,11 @@
     <Content Include="Areas\Admin\Views\Urunler\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Urunler\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Sliders\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Sliders\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Sliders\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Sliders\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Sliders\Index.cshtml" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
@@ -520,6 +527,9 @@
     <Content Include="Themes\soft-ui-dashboard-main\LICENSE" />
     <Content Include="Themes\soft-ui-dashboard-main\package.json" />
     <Content Include="Themes\soft-ui-dashboard-main\README.md" />
+    <Content Include="Views\Shared\_PartialMenu.cshtml" />
+    <Content Include="Views\Home\UrunDetay.cshtml" />
+    <Content Include="Views\Home\Kategori.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

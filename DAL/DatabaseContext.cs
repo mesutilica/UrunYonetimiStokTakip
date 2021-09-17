@@ -19,6 +19,7 @@ namespace DAL
         public virtual DbSet<Urun> Urunler { get; set; }
         public virtual DbSet<Musteri> Musteriler { get; set; }
         public virtual DbSet<Siparis> Siparisler { get; set; }
+        public virtual DbSet<Slider> Sliders { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

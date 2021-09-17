@@ -59,6 +59,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="SiparisManager.cs" />
+    <Compile Include="SliderManager.cs" />
     <Compile Include="UrunManager.cs" />
   </ItemGroup>
   <ItemGroup>
