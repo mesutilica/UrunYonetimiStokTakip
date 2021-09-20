@@ -14,6 +14,7 @@ namespace UrunYonetimiStokTakip.MvcUI.Controllers
         UrunManager manager = new UrunManager();
         KategoriManager kategoriManager = new KategoriManager();
         SliderManager sliderManager = new SliderManager();
+        IletisimManager Iletisim = new IletisimManager();
 
         public ActionResult Index()
         {
@@ -32,14 +33,39 @@ namespace UrunYonetimiStokTakip.MvcUI.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Arı Yazılım Hakkımızda Sayfası.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Arı Yazılım İletişim Sayfası";
+
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Contact(string email, string adi, string soyadi, string mesaj)
+        {
+            try
+            {
+                var sonuc = Iletisim.Add(new Iletisim
+                {
+                    Adi = adi,
+                    EklenmeTarihi = DateTime.Now,
+                    Email = email,
+                    Mesaj = mesaj,
+                    Soyadi = soyadi
+                });
+                if (sonuc > 0)
+                {
+                    TempData["Mesaj"] = $"Sayın {adi} {soyadi} Mesajınız İletilmiştir!";
+                }
+            }
+            catch (Exception)
+            {
+                TempData["Mesaj"] = $"Hata Oluştu! Sayın {adi} {soyadi} Mesajınız İletilememiştir!";
+            }
 
             return View();
         }

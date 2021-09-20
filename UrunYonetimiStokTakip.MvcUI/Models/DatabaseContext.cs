@@ -1,7 +1,6 @@
 ﻿using Entities;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Data.Entity;
-using System.Linq;
 
 namespace UrunYonetimiStokTakip.MvcUI.Models
 {
@@ -19,6 +18,7 @@ namespace UrunYonetimiStokTakip.MvcUI.Models
         public virtual DbSet<Musteri> Musteriler { get; set; }
         public virtual DbSet<Siparis> Siparisler { get; set; }
         public virtual DbSet<Slider> Sliders { get; set; }
+        public virtual DbSet<Iletisim> Iletisim { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>(); //veritabanında oluşacak olan tabloların isimlerine s takısı gelmemesi için

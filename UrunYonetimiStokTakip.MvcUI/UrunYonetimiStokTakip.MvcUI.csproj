@@ -140,6 +140,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\DefaultController.cs" />
+    <Compile Include="Areas\Admin\Controllers\IletisimController.cs" />
     <Compile Include="Areas\Admin\Controllers\KategoriController.cs" />
     <Compile Include="Areas\Admin\Controllers\KullaniciController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
@@ -220,6 +221,11 @@
     <Content Include="Areas\Admin\Views\Sliders\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Sliders\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Sliders\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Iletisim\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Iletisim\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Iletisim\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Iletisim\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Iletisim\Index.cshtml" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />

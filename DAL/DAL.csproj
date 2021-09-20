@@ -62,6 +62,10 @@
     <Compile Include="Migrations\202109171739093_SliderEklendi.designer.cs">
       <DependentUpon>202109171739093_SliderEklendi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109201752588_iletişimSayfasiEklendi.cs" />
+    <Compile Include="Migrations\202109201752588_iletişimSayfasiEklendi.designer.cs">
+      <DependentUpon>202109201752588_iletişimSayfasiEklendi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -81,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109171739093_SliderEklendi.resx">
       <DependentUpon>202109171739093_SliderEklendi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109201752588_iletişimSayfasiEklendi.resx">
+      <DependentUpon>202109201752588_iletişimSayfasiEklendi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

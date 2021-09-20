@@ -6,90 +6,18 @@
 
 <h2>Kategori</h2>
 
+<div class="container">
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Kategori.KategoriAdi)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Marka.MarkaAdi)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UrunAdi)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Aciklama)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EklenmeTarihi)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Aktif)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UrunFiyati)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Kdv)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.StokMiktari)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Iskonto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ToptanFiyat)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Resim)
-        </th>
-        <th></th>
-    </tr>
+    <div class="row text-center">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4">
+                <img src="~/Img/@item.Resim" alt="" height="100" />
+                <h2>@item.UrunAdi</h2>
+                <p>@item.Aciklama</p>
+                <p><a class="btn btn-secondary" href="/Home/UrunDetay/@item.Id">Detayını gör »</a></p>
+            </div>
+        }
+    </div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Kategori.KategoriAdi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Marka.MarkaAdi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UrunAdi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Aciklama)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EklenmeTarihi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Aktif)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UrunFiyati)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Kdv)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StokMiktari)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Iskonto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ToptanFiyat)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Resim)
-        </td>
-        <td>
-            
-        </td>
-    </tr>
-}
-
-</table>
+</div>

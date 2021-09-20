@@ -12,8 +12,7 @@
     <div class="carousel-inner">
         @foreach (var item in Model.Sliders)
         {
-            <div class="carousel-item">
-
+            <div class="carousel-item @(item == Model.Sliders.FirstOrDefault() ? "active" : "" )">
                 <img src="~/Img/@item.Resim" alt="" class="img-fluid" />
                 <div class="container">
                     <div class="carousel-caption text-start">
@@ -24,18 +23,7 @@
                 </div>
             </div>
         }
-
-        <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
-
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>Some representative placeholder content for the second slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                </div>
-            </div>
-        </div>
+        
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

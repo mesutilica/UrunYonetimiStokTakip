@@ -20,6 +20,7 @@ namespace DAL
         public virtual DbSet<Musteri> Musteriler { get; set; }
         public virtual DbSet<Siparis> Siparisler { get; set; }
         public virtual DbSet<Slider> Sliders { get; set; }
+        public virtual DbSet<Iletisim> Iletisim { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

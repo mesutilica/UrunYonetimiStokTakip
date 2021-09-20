@@ -1,10 +1,10 @@
-﻿@model IEnumerable<Entities.Slider>
+﻿@model IEnumerable<Entities.Iletisim>
 
 @{
-    ViewBag.Title = "Slider";
+    ViewBag.Title = "İletişim Formları";
 }
 
-<h2>Slider</h2>
+<h2>İletişim Formları</h2>
 
 <p>
     @Html.ActionLink("Yeni Ekle", "Create", null, new { @class = "btn btn-info" })
@@ -12,16 +12,16 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Baslik)
+            @Html.DisplayNameFor(model => model.Email)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Aciklama)
+            @Html.DisplayNameFor(model => model.Adi)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Link)
+            @Html.DisplayNameFor(model => model.Soyadi)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Resim)
+            @Html.DisplayNameFor(model => model.EklenmeTarihi)
         </th>
         <th></th>
     </tr>
@@ -30,16 +30,16 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Baslik)
+                @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Aciklama)
+                @Html.DisplayFor(modelItem => item.Adi)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Link)
+                @Html.DisplayFor(modelItem => item.Soyadi)
             </td>
             <td>
-                <img src="~/Img/@Html.DisplayFor(modelItem => item.Resim)" alt="" height="40" />
+                @Html.DisplayFor(modelItem => item.EklenmeTarihi)
             </td>
             <td>
                 @Html.ActionLink("Düzenle", "Edit", new { id = item.Id }, new { @class = "btn btn-sm btn-primary" }) |

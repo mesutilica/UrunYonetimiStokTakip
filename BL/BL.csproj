@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IletisimManager.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="KategoriManager.cs" />
     <Compile Include="KullaniciManager.cs" />
