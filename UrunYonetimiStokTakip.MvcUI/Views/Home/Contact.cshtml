@@ -25,11 +25,11 @@
         </div>
         <div class="col">
 
-            <form method="post">
+            <form method="post" id="iletisim_formu">
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email Adresiniz</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" name="email" class="form-control" id="Email" aria-describedby="emailHelp">
                 </div>
 
                 <div class="mb-3">
@@ -47,13 +47,13 @@
                     <textarea class="form-control" id="Mesaj" name="Mesaj" rows="3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Gönder</button>
+                <button type="button" class="btn btn-primary" onclick="iletisim_formu()">Gönder</button>
 
             </form>
 
         </div>
     </div>
-
+    <div class="alert alert-success" id="sonuc" style="display:none"></div>
     @{
         if (IsPost)
         {
@@ -66,3 +66,36 @@
     }
 
 </div>
+
+@section scripts{
+    <script>
+        function iletisim_formu() {
+            var email = $("#Email").val();
+            var adi = $("#Adi").val();
+            var soyadi = $("#Soyadi").val();
+            var mesaj = $("#Mesaj").val();
+
+            var message = {
+                "email": email,
+                "adi": adi,
+                "soyadi": soyadi,
+                "mesaj": mesaj
+            };
+
+            $.ajax({
+                method: "POST",
+                url: "/Home/Contact",
+                type: "json",
+                data: message,
+                success: function (data) {
+                    document.getElementById("iletisim_formu").reset();
+                    $("#sonuc").show().html("Mesajınız Gönderildi!").delay("5000").fadeOut();
+                },
+                error: function (err) {
+                    alert("Hata Oluştu!");
+                }
+
+            });
+        }
+    </script>
+}

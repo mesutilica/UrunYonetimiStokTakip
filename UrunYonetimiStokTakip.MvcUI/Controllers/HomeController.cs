@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using BL;
 using Entities;
+using UrunYonetimiStokTakip.MvcUI.Utils;
 
 namespace UrunYonetimiStokTakip.MvcUI.Controllers
 {
@@ -49,15 +50,17 @@ namespace UrunYonetimiStokTakip.MvcUI.Controllers
         {
             try
             {
-                var sonuc = Iletisim.Add(new Iletisim
+                var formMesaj = new Iletisim
                 {
                     Adi = adi,
                     EklenmeTarihi = DateTime.Now,
                     Email = email,
                     Mesaj = mesaj,
                     Soyadi = soyadi
-                });
-                if (sonuc > 0)
+                };
+                var sonuc = Iletisim.Add(formMesaj);
+                //bool mailGonderildiMi = MailHelper.SendMail(formMesaj);
+                if (sonuc > 0)// && mailGonderildiMi == true
                 {
                     TempData["Mesaj"] = $"Sayın {adi} {soyadi} Mesajınız İletilmiştir!";
                 }
