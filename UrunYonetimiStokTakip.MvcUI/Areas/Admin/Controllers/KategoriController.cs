@@ -8,7 +8,8 @@ namespace UrunYonetimiStokTakip.MvcUI.Areas.Admin.Controllers
 {
     public class KategoriController : Controller
     {
-        KategoriManager manager = new KategoriManager();
+        //KategoriManager manager = new KategoriManager();
+        Repository<Kategori> manager = new Repository<Kategori>();
         // GET: Admin/Kategori
         public ActionResult Index()
         {
