@@ -37,5 +37,9 @@
             </asp:ContentPlaceHolder>
         </div>
     </form>
+    <script src="/Scripts/jquery-3.6.1.min.js"></script>
+    <script>
+        $("ul#menu li:first-child").addClass("active");
+    </script>
 </body>
 </html>

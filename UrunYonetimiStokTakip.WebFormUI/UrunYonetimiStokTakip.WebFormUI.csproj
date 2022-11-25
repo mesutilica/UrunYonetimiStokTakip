@@ -81,6 +81,11 @@
     <Content Include="Admin\MusteriYonetimi.aspx" />
     <Content Include="Admin\SiparisYonetimi.aspx" />
     <Content Include="Admin\UrunYonetimi.aspx" />
+    <None Include="Scripts\jquery-3.6.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.1.js" />
+    <Content Include="Scripts\jquery-3.6.1.min.js" />
+    <Content Include="Scripts\jquery-3.6.1.slim.js" />
+    <Content Include="Scripts\jquery-3.6.1.slim.min.js" />
     <Content Include="UrunDetay.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -170,6 +175,8 @@
   <ItemGroup>
     <Content Include="AnaSablon.Master" />
     <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.6.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
