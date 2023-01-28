@@ -8,7 +8,7 @@ namespace DAL
     public class DatabaseContext : DbContext
     {
         public DatabaseContext()
-            : base("name=DatabaseContext")
+            : base("name=DatabaseContext") // CanliDatabaseContext
         {
             Database.SetInitializer(new DatabaseInitializer());//entity frameworkdeki database sýnýfý içerisinde yer alan SetInitializer metoduna kendi yazdýðýmýz DatabaseInitializer sýnýfýný yolluyoruz, böylece bu sýnýf içerisindeki yapýlandýrma ayarlarý iþlenecek
         }
